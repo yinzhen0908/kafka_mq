@@ -27,7 +27,7 @@ public class KafkaProducerAcks {
         props.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG, 1);
 
 
-        KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
+         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
         ProducerRecord<String, String> record =
                 new ProducerRecord<String, String>("topic01","ack", "test ack");
         //发送消息给服务器
